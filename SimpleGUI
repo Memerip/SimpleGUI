@@ -1,0 +1,199 @@
+-- Created by Meme.rip#6927
+-- Gui to Lua Version: 3.2
+
+-- Instances:
+
+local SimpleGUI = Instance.new("ScreenGui")
+local SimpleFrame = Instance.new("Frame")
+local GUIname = Instance.new("TextLabel")
+local GUIcredits = Instance.new("TextLabel")
+local BackdoorV2 = Instance.new("TextButton")
+local GUIclose = Instance.new("TextButton")
+local EZHub = Instance.new("TextButton")
+local FlyUnFly = Instance.new("TextButton")
+local OtherGUI = Instance.new("TextLabel")
+local MainScriptTXT = Instance.new("TextLabel")
+local IntroGui = Instance.new("ScreenGui")
+local Background = Instance.new("Frame")
+
+--Properties:
+
+SimpleGUI.Name = "SimpleGUI"
+SimpleGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SimpleGUI.ResetOnSpawn = false
+
+SimpleFrame.Name = "SimpleFrame"
+SimpleFrame.Parent = SimpleGUI
+SimpleFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SimpleFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SimpleFrame.Position = UDim2.new(0.304483831, 0, 0.260575294, 0)
+SimpleFrame.Size = UDim2.new(0, 351, 0, 301)
+SimpleFrame.Active = true
+SimpleFrame.Draggable = true
+
+GUIname.Name = "GUIname"
+GUIname.Parent = SimpleFrame
+GUIname.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+GUIname.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIname.Size = UDim2.new(0, 351, 0, 52)
+GUIname.Font = Enum.Font.SciFi
+GUIname.Text = "Simple GUI"
+GUIname.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIname.TextScaled = true
+GUIname.TextSize = 14.000
+GUIname.TextWrapped = true
+
+GUIcredits.Name = "GUIcredits"
+GUIcredits.Parent = SimpleFrame
+GUIcredits.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+GUIcredits.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIcredits.Position = UDim2.new(0, 0, 0.887043178, 0)
+GUIcredits.Size = UDim2.new(0, 351, 0, 34)
+GUIcredits.Font = Enum.Font.SciFi
+GUIcredits.Text = "Created by Meme.rip#6927"
+GUIcredits.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIcredits.TextSize = 14.000
+GUIcredits.TextWrapped = true
+
+BackdoorV2.Name = "Backdoor.V2"
+BackdoorV2.Parent = SimpleFrame
+BackdoorV2.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+BackdoorV2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BackdoorV2.Position = UDim2.new(0.618233621, 0, 0.651162803, 0)
+BackdoorV2.Size = UDim2.new(0, 127, 0, 50)
+BackdoorV2.Font = Enum.Font.SciFi
+BackdoorV2.Text = "Backdoor.exe v2"
+BackdoorV2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BackdoorV2.TextSize = 14.000
+BackdoorV2.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/iK4oS/backdoor.exe/master/source.lua'),true))()
+end)
+
+GUIclose.Name = "GUIclose"
+GUIclose.Parent = SimpleFrame
+GUIclose.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+GUIclose.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GUIclose.Size = UDim2.new(0, 28, 0, 27)
+GUIclose.Font = Enum.Font.SourceSans
+GUIclose.Text = "X"
+GUIclose.TextColor3 = Color3.fromRGB(0, 0, 0)
+GUIclose.TextScaled = true
+GUIclose.TextSize = 14.000
+GUIclose.TextWrapped = true
+
+EZHub.Name = "EZHub"
+EZHub.Parent = SimpleFrame
+EZHub.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+EZHub.BorderColor3 = Color3.fromRGB(0, 0, 0)
+EZHub.Position = UDim2.new(0.618233621, 0, 0.438538224, 0)
+EZHub.Size = UDim2.new(0, 127, 0, 50)
+EZHub.Font = Enum.Font.SciFi
+EZHub.Text = "EZ Hub"
+EZHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+EZHub.TextSize = 14.000
+EZHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+FlyUnFly.Name = "FlyUnFly"
+FlyUnFly.Parent = SimpleFrame
+FlyUnFly.BackgroundColor3 = Color3.fromRGB(93, 93, 93)
+FlyUnFly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlyUnFly.Position = UDim2.new(0.0199430194, 0, 0.438538194, 0)
+FlyUnFly.Size = UDim2.new(0, 127, 0, 50)
+FlyUnFly.Font = Enum.Font.SciFi
+FlyUnFly.Text = "Fly (E to toggle)"
+FlyUnFly.TextColor3 = Color3.fromRGB(0, 0, 0)
+FlyUnFly.TextSize = 14.000
+FlyUnFly.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memerip/SimpleGUI/main/fly'),true))()
+end)
+
+OtherGUI.Name = "OtherGUI"
+OtherGUI.Parent = SimpleFrame
+OtherGUI.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+OtherGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+OtherGUI.Position = UDim2.new(0.618233621, 0, 0.225913614, 0)
+OtherGUI.Size = UDim2.new(0, 127, 0, 50)
+OtherGUI.Font = Enum.Font.SciFi
+OtherGUI.Text = "Other GUI's"
+OtherGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OtherGUI.TextSize = 14.000
+
+MainScriptTXT.Name = "MainScriptTXT"
+MainScriptTXT.Parent = SimpleFrame
+MainScriptTXT.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
+MainScriptTXT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainScriptTXT.Position = UDim2.new(0.019942997, 0, 0.225913614, 0)
+MainScriptTXT.Size = UDim2.new(0, 127, 0, 50)
+MainScriptTXT.Font = Enum.Font.SciFi
+MainScriptTXT.Text = "Main Scripts"
+MainScriptTXT.TextColor3 = Color3.fromRGB(0, 0, 0)
+MainScriptTXT.TextSize = 14.000
+
+IntroGui.Name = "IntroGui"
+IntroGui.Parent = SimpleGUI
+
+Background.Name = "Background"
+Background.Parent = IntroGui
+Background.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Background.BackgroundTransparency = 1.000
+Background.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Background.Size = UDim2.new(1, 0, 1, 0)
+
+-- Scripts:
+
+local function GMVOO_fake_script() -- GUIclose.LocalScript 
+	local script = Instance.new('LocalScript', GUIclose)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(GMVOO_fake_script)()
+local function HEBGWA_fake_script() -- IntroGui.LocalScript 
+	local script = Instance.new('LocalScript', IntroGui)
+
+	local plr = game.Players.LocalPlayer
+	
+	repeat wait() until plr.Character
+	
+	local gn = script.Parent.GameName.Value
+	local gc = script.Parent.GameCreator.Value
+	
+	local rd = game:GetService("RunService")
+	
+	wait(1.8)
+	
+	local gctxt = Instance.new("TextLabel", script.Parent)
+	gctxt.Text = "Coded by "..gc
+	gctxt.BackgroundTransparency = 1
+	gctxt.FontSize = "Size24"
+	gctxt.Size = UDim2.new(1, 0, 0, 100)
+	gctxt.Position = UDim2.new(0, 0, 0, -120)
+	gctxt.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+	gctxt.TextStrokeTransparency = 0.4
+	gctxt:TweenPosition(UDim2.new(0, 0, 0, 43))
+	wait(0.9)
+	local gntxt = Instance.new("TextLabel", script.Parent)
+	gntxt.Text = gn
+	gntxt.BackgroundTransparency = 1
+	gntxt.FontSize = "Size36"
+	gntxt.Size = UDim2.new(1, 0, 0, 100)
+	gntxt.Position = UDim2.new(0, 0, 0, -120)
+	gntxt.TextColor3 = Color3.new(255/255, 255/255, 255/255)
+	gntxt.TextStrokeTransparency = 0.4
+	gntxt:TweenPosition(UDim2.new(0, 0, 0, 10))
+	
+	wait(3.5)
+	
+	gntxt:TweenPosition(UDim2.new(0, 0, 0, -120))
+	wait(0.9)
+	gctxt:TweenPosition(UDim2.new(0, 0, 0, -120))
+	wait(0.6)
+	for i = 1, 10 do
+		script.Parent.Background.BackgroundTransparency = script.Parent.Background.BackgroundTransparency + 0.1
+		rd.RenderStepped:wait()
+	end
+end
+coroutine.wrap(HEBGWA_fake_script)()
